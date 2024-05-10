@@ -44,7 +44,7 @@
            <!-- inicio de sesión -->
             <ul class="flex items-center hidden space-x-8 lg:flex">
               <li>
-                <a href="../src/inicioSesion.html"
+                <a href="../inicioSesion.html"
                   class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                   aria-label="Sign up" title="Sign up">
                   Iniciar Sesión
@@ -57,53 +57,38 @@
    
 
   </header>
-  <main class="w-full h-screen flex flex-col items-center justify-center px-4">
-    <div class="max-w-sm w-full text-gray-600">
-        <div class="text-center">
-          <svg width="48px" height="48px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"  stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full inline-block" viewBox="0 0 24 24">
-            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-          </svg> 
-          <span class="ml-2 text-xl font-bold tracking-wide text-black-900 uppercase">El tío programador</span>
-            <div class="mt-5 space-y-2">
-                <h3 class="text-gray-800 text-2xl font-bold sm:text-3xl">Ingresa a tu cuneta</h3>
-                <p class="">¿No tienes cuenta? <a href="../src/registro.html" class="font-medium text-indigo-600 hover:text-indigo-500">Inscribirse</a></p>
-            </div>
-        </div>
-        <form
-            onsubmit="event.preventDefault()"
-            class="mt-8 space-y-5"
-        >
-            <div>
-                <label class="font-medium">
-                    Correo
-                </label>
-                <input
-                    type="email"
-                    required
-                    class="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
-                />
-            </div>
-            <div>
-                <label class="font-medium">
-                    Contraseña
-                </label>
-                <input
-                    type="password"
-                    required
-                    class="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
-                />
-            </div>
-            <button
-                class="w-full px-4 py-2 text-white font-medium bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-600 rounded-lg duration-150"
-            >
-                Ingresar
-            </button>
-            <div class="text-center">
-                <a href="../src/contraseña/olivideContraseña.html" class="hover:text-indigo-600">¿Olvidaste tu contraseña?</a>
-            </div>
-        </form>
-    </div>
-</main>
+  <main>
+
+    <section>
+        <section class="max-w-4xl p-6 mx-auto bg-white rounded-md shadow-md dark:bg-gray-800">
+            <h2 class="text-lg font-semibold text-gray-700 capitalize dark:text-white">Account settings</h2>
+        
+            <form>
+                <div class="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2">
+                           
+                    <div>
+                        <label class="text-gray-700 dark:text-gray-200" for="emailAddress">Email Address</label>
+                        <input id="emailAddress" type="email" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring">
+                    </div>
+        
+                    <div>
+                        <label class="text-gray-700 dark:text-gray-200" for="password">Nueva contraeña</label>
+                        <input id="password" type="password" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring">
+                    </div>
+        
+                    <div>
+                        <label class="text-gray-700 dark:text-gray-200" for="passwordConfirmation">Confirmar nueva contraseña</label>
+                        <input id="passwordConfirmation" type="password" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring">
+                    </div>
+                </div>
+        
+                <div class="flex justify-end mt-6">
+                    <button class="px-8 py-2.5 leading-5 text-white transition-colors duration-300 transform bg-gray-700 rounded-md hover:bg-gray-600 focus:outline-none focus:bg-gray-600">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </section>
+  </main>
   <footer class="text-gray-600 body-font">
     <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
       <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
